@@ -97,7 +97,7 @@
   "definitions" : {
     "InventoryItem" : {
       "type" : "object",
-      "required" : [ "id", "name", "manufacturer", "releaseDate" ],
+      "required" : [ "id", "name", "manufacturer", "releaseDate", "version" ],
       "properties" : {
         "id" : {
           "type" : "string",
@@ -112,6 +112,10 @@
           "type" : "string",
           "format" : "int32",
           "example" : "2016-08-29T09:12:33.001Z"
+        },
+        "version" : {
+          "type" : "string",
+          "example" : "vol1.1"
         },
         "manufacturer" : {
           "$ref" : "#/definitions/Manufacturer"
@@ -133,6 +137,10 @@
         "phone" : {
           "type" : "string",
           "example" : "408-867-5309"
+        },
+        "version" : {
+          "type" : "string",
+          "example" : "vol1.1"
         }
       }
     }
